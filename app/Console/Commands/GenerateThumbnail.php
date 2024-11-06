@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\Models\MediaFile;
 use Illuminate\Console\Command;
+use Pawlox\VideoThumbnail\Facade\VideoThumbnail;
 
 class GenerateThumbnail extends Command
 {
