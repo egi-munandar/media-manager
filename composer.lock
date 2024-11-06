@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e8b322a0a0d90df7409f9a2af2ccc445",
+    "content-hash": "f3fb5c31e376b26e9f8aa11d67e76732",
     "packages": [
         {
             "name": "brick/math",
@@ -1102,6 +1102,98 @@
             "time": "2023-12-03T19:50:20+00:00"
         },
         {
+            "name": "icewind/smb",
+            "version": "v3.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/icewind1991/SMB.git",
+                "reference": "e0e86b16640f5892dd00408ed50ad18357dac6c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/icewind1991/SMB/zipball/e0e86b16640f5892dd00408ed50ad18357dac6c1",
+                "reference": "e0e86b16640f5892dd00408ed50ad18357dac6c1",
+                "shasum": ""
+            },
+            "require": {
+                "icewind/streams": ">=0.7.3",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpstan/phpstan": "^0.12.57",
+                "phpunit/phpunit": "^8.5|^9.3.8",
+                "psalm/phar": "^4.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Icewind\\SMB\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robin Appelman",
+                    "email": "icewind@owncloud.com"
+                }
+            ],
+            "description": "php wrapper for smbclient and libsmbclient-php",
+            "support": {
+                "issues": "https://github.com/icewind1991/SMB/issues",
+                "source": "https://github.com/icewind1991/SMB/tree/v3.6.0"
+            },
+            "time": "2023-08-10T13:17:39+00:00"
+        },
+        {
+            "name": "icewind/streams",
+            "version": "v0.7.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/icewind1991/Streams.git",
+                "reference": "64200fd7cfcc7f550c3c695c48d8fd8bba97fecb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/icewind1991/Streams/zipball/64200fd7cfcc7f550c3c695c48d8fd8bba97fecb",
+                "reference": "64200fd7cfcc7f550c3c695c48d8fd8bba97fecb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2",
+                "phpstan/phpstan": "^0.12",
+                "phpunit/phpunit": "^9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Icewind\\Streams\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robin Appelman",
+                    "email": "icewind@owncloud.com"
+                }
+            ],
+            "description": "A set of generic stream wrappers",
+            "support": {
+                "issues": "https://github.com/icewind1991/Streams/issues",
+                "source": "https://github.com/icewind1991/Streams/tree/v0.7.7"
+            },
+            "time": "2023-03-16T14:52:25+00:00"
+        },
+        {
             "name": "inertiajs/inertia-laravel",
             "version": "v1.3.0",
             "source": {
@@ -1176,6 +1268,74 @@
                 }
             ],
             "time": "2024-06-13T01:25:09+00:00"
+        },
+        {
+            "name": "jerodev/flysystem-v3-smb-adapter",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jerodev/flysystem-v3-smb-adapter.git",
+                "reference": "f8274251025ec40749003480c5eb6e0c469d8ad4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jerodev/flysystem-v3-smb-adapter/zipball/f8274251025ec40749003480c5eb6e0c469d8ad4",
+                "reference": "f8274251025ec40749003480c5eb6e0c469d8ad4",
+                "shasum": ""
+            },
+            "require": {
+                "icewind/smb": "^3.5",
+                "league/flysystem": "^3.0",
+                "php": ">=8.0.2"
+            },
+            "require-dev": {
+                "illuminate/filesystem": "^9.0",
+                "illuminate/support": "^9.0",
+                "jerodev/code-styles": "dev-master",
+                "league/flysystem-adapter-test-utilities": "^3.0",
+                "orchestra/testbench": "^7.7",
+                "phpstan/phpstan": "^1.4",
+                "phpunit/phpunit": "^9.5"
+            },
+            "suggest": {
+                "ext-smbclient": "Required to use this package"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jerodev\\Flysystem\\Smb\\LaravelSmbAdapterProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jerodev\\Flysystem\\Smb\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "jerodev",
+                    "email": "jeroen@deviaene.eu"
+                }
+            ],
+            "description": "SMB adapter for Flysystem v3",
+            "keywords": [
+                "Flysystem",
+                "filesystem",
+                "laravel",
+                "samba",
+                "smb"
+            ],
+            "support": {
+                "issues": "https://github.com/jerodev/flysystem-v3-smb-adapter/issues",
+                "source": "https://github.com/jerodev/flysystem-v3-smb-adapter/tree/1.2.0"
+            },
+            "time": "2023-06-19T16:54:19+00:00"
         },
         {
             "name": "laravel/framework",
@@ -9594,12 +9754,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2"
     },
-    "platform-dev": {},
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
