@@ -62,19 +62,19 @@ return [
             'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
             'throw' => false,
         ],
-        'smb' => [
-            'driver' => 'smb',
-            'workgroup' => 'WORKGROUP',
-            'host' => env('SMB_HOST', '127.0.0.1'),
-            'path' => env('SMB_PATH', 'test'),
-            'username' => env('SMB_USERNAME', ''),
-            'password' => env('SMB_PASSWORD', ''),
+        // 'smb' => [
+        //     'driver' => 'smb',
+        //     'workgroup' => 'WORKGROUP',
+        //     'host' => env('SMB_HOST', '127.0.0.1'),
+        //     'path' => env('SMB_PATH', 'test'),
+        //     'username' => env('SMB_USERNAME', ''),
+        //     'password' => env('SMB_PASSWORD', ''),
 
-            // // Optional Icewind SMB options
-            // 'smb_version_min' => \Icewind\SMB\IOptions::PROTOCOL_SMB2,
-            // 'smb_version_max' => \Icewind\SMB\IOptions::PROTOCOL_SMB2_24,
-            // 'timeout' => 20,
-        ],
+        //     // // Optional Icewind SMB options
+        //     // 'smb_version_min' => \Icewind\SMB\IOptions::PROTOCOL_SMB2,
+        //     // 'smb_version_max' => \Icewind\SMB\IOptions::PROTOCOL_SMB2_24,
+        //     // 'timeout' => 20,
+        // ],
     ],
 
     /*
