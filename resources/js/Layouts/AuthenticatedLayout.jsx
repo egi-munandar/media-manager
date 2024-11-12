@@ -31,8 +31,8 @@ export default function AuthenticatedLayout({ header, children }) {
                                     Dashboard
                                 </NavLink>
                                 <NavLink
-                                    href={route('media')}
-                                    active={route().current('media')}
+                                    href={route('media.index')}
+                                    active={route().current('media.*')}
                                 >
                                     Media Files
                                 </NavLink>

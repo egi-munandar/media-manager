@@ -10,3 +10,4 @@ use Illuminate\Support\Facades\Schedule;
 
 Schedule::command('app:scan-media')->hourly();
 Schedule::command('app:generate-thumbnail')->everyThirtyMinutes();
+Schedule::command('app:check-schedule')->everyMinute();

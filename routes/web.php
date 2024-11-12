@@ -21,7 +21,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware(['auth'])->prefix('media')->controller(MediaController::class)->group(function () {
-    Route::get('/', 'index')->name('media');
+    Route::get('/', 'index')->name('media.index');
     Route::post('/', 'store')->name('media.store');
     Route::put('/{media}/update', 'update')->name('media.update');
     Route::get('/create', 'create')->name('media.create');

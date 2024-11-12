@@ -108,7 +108,7 @@ class MediaController extends Controller
                 ]);
             }
         }
-        return redirect(route('media'));
+        return redirect(route('media.index'));
     }
     public function scan_proxy(MediaFile $media)
     {
