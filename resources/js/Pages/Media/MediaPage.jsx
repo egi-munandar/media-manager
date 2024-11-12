@@ -89,7 +89,7 @@ export default function MediaPage({ mds }) {
     const scanProxy = (media) => {
         form.put(route('media.scan-proxy', media.id), {
             onSuccess: () => {
-                router.visit(route('media'), {
+                router.visit(route('media.index'), {
                     only: ['mds'],
                     preserveState: true,
                     preserveScroll: true,
